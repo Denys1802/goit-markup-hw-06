@@ -48,28 +48,49 @@
 		   <button data-modal-open class="button" type="button">Замовити послугу</button>
 			<div data-modal class="backdrop is-hidden" >
 				<div class="modal">
-					<form action="" class="decision-form">
+					<form class="decision-form">
 						<p class="decision-form-text">Залиште свої дані, ми вам передзвонимо</p>
 						<p class="form-field">
 							<label for="user-name">Ім'я</label>
 							<input type="text" name="user-name" id="user-name">
+							<span class="form-icon">
+								<svg width="12" height="12">
+									<use href="./images/icons.svg#icon-men"></use>
+								</svg>
+							</span>
 						</p>
 						<p class="form-field">
-							<label for="user-phone">Телефон</label>
-							<input type="phone" name="user-phone" id="user-name">
+							<label for="user-tel">Телефон</label>
+							<input type="tel" name="user-tel" id="user-tel">
+							<span class="form-icon">
+								<svg width="13" height="13">
+									<use href="./images/icons.svg#icon-tel"></use>
+								</svg>
+							</span>
 						</p>
 						<p class="form-field">
-							<label for="">Пошта</label>
+							<label for="user-email">Пошта</label>
 							<input type="email" name="user-email" id="user-email">
+							<span class="form-icon">
+								<svg width="15" height="12">
+									<use href="./images/icons.svg#icon-mail"></use>
+								</svg>
+							</span>
 						</p>
 						<p class="form-field">
 							<label for="coments">Коментар</label>
 							<textarea name="coments" id="coments" placeholder="Введіть текст"></textarea>
 						</p>
-
 						<div class="form-check">
-							<input type="checkbox" name="terms" value="agreement" id="agreement">
-							<label for="agreement">Погоджуюся з розсилкою та приймаю <a href="#" class="agreement-icon">Умови договору</a></label>
+							<label class="label" for="agreement">
+								<input class="input" type="checkbox" name="terms" value="agreement" id="agreement">
+								<span class="chek-icon">
+									<svg width="16" height="15">
+										<use href="./images/icons.svg#icon-like" ></use>
+									</svg>
+								</span>
+								Погоджуюся з розсилкою та приймаю  <a href="#" class="agreement-icon">Умови договору</a>
+							</label>
 						</div>
 						<button class="decision-button" type="submit">Відправити</button>
 					</form>
@@ -383,7 +404,7 @@
 				</ul>
 			</div>
 			<div class="footer-sub">
-				<form action="" class="footer-form">
+				<form class="footer-form">
 					<div class="footer-send">
 						<label for="footer-email">Підпишіться на розсилку</label>
 						<input class="footer-input" type="email" name="email" id="footer-email" placeholder="E-mail">
